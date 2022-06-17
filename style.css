@@ -112,3 +112,12 @@ span {
 .term span a:hover {
   transform: translateY(8px);
 }
+
+@media (max-width: 775px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-areas: "content" "top-right" "right" "form" "term";
+  }
+}
